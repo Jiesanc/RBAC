@@ -45,7 +45,7 @@ rbac/models.py
 
   ​	用于在rbac分配权限时，读取业务表中的用户信息。
 
-- 5. 业务逻辑开发
+- 5.业务逻辑开发
 
      将所有的路由都设置一个name，如：
 
@@ -73,7 +73,7 @@ rbac/models.py
 
 
 
-- 6. 权限信息录入
+- 6.权限信息录入
 
 ```python
 - 在url中添加rbac的路由分发,注意：必须设置namespace
@@ -99,7 +99,7 @@ rbac/models.py
     ]
 ```
 
-- 7. 编写用户登录的逻辑【进行权限初始化】
+- 7.编写用户登录的逻辑【进行权限初始化】
 
 # 
 
@@ -136,8 +136,7 @@ from django.shortcuts import render, redirect
 
 
 
-- 8. 编写一个首页的逻辑
-
+- 8.编写一个首页的逻辑
 
 
 ```python
@@ -156,7 +155,7 @@ def index(request):
 
 
 
-- 9. 通过中间件进行权限校验
+- 9.通过中间件进行权限校验
 
 ```python
  # 权限校验
@@ -180,7 +179,7 @@ def index(request):
 
 
 
-- 10. 粒度到按钮级别的控制
+- 10.粒度到按钮级别的控制
 
 ```python
 {% block content %}
